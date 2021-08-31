@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "ayo",
+        "lead_lecture": "mojid",
+        "course_duration": "50hrs",
+        "price": 500000.99
+    },
+    {
+        "id": 2,
+        "name": "mojid",
+        "lead_lecture": "ayo",
+        "course_duration": "100hrs",
+        "price": 500000.99
+    },
+    {
+        "id": 3,
+        "name": "mojid kareem",
+        "lead_lecture": "ayo agbato",
+        "course_duration": "150hrs",
+        "price": 500000.99
+    }
+]
