@@ -22,8 +22,7 @@ def deploy(message):
     os.system("git add .")    # add all to git
     os.system(f"git commit -m '{message}'") # commit deployment
     os.system("git push") # push staging code
-    print("successful")
-    os.system("rm -r dist") # delete build directory
+    print("push successful")
     # os.system("cd .. && rm -r dist") # delete build directory
     # send_mail(emails, message)
 
