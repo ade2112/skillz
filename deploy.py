@@ -9,7 +9,7 @@ config = {
         "smtp_server" : "smtp.sendgrid.net",
         "sender_email" : "storm@tosoptech.com",
         "username": "apikey",
-        "password" : "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",
+        "password" : "",
 }
 
 
