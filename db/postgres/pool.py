@@ -1,7 +1,6 @@
 from psycopg2 import pool
 
-
-connection_pool = pool.SimpleConnectionPool(1,1,database="test", user="postgres", password="", host="localhost")
+connection_pool = pool.SimpleConnectionPool(1,1,database="topskill", user="postgres", password="", host="localhost")
 
 class CursorFromConnectionFromPool:
     def __init__(self):
@@ -19,12 +18,13 @@ class CursorFromConnectionFromPool:
         else:
             self.cursor.close()
             self.connection.commit()
-            self.connection_pool.putconn(self.connection)
+            connection_pool.putconn(self.connection)
+
 
 def load_form_db():
     with CursorFromConnectionFromPool() as cursor:
-        cursor.execute('select * from courses')
+        cursor.execute('select 1 + 1')
         data = cursor.fetchall()
         return data
 
-load_form_db() 
+# load_form_db() 
