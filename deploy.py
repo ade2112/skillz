@@ -18,7 +18,6 @@ config = {
 def deploy(message):
     """Deployment process"""
     print('pushing to github')
-    os.system("npm run build") # build project
     os.system("git add .")    # add all to git
     os.system(f"git commit -m '{message}'") # commit deployment
     os.system("git push") # push staging code
